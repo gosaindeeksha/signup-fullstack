@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.orange{
+  background-color: rgb(255,119,84);
+
+  min-height: 50dvh;
+}
+.white{
+  background-color:rgb(245,240,240);
+  min-height: 50dvh;
+}
+.logo{
+  height: 20dvh;
+}
+
+/* App.css or any appropriate CSS file */
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
